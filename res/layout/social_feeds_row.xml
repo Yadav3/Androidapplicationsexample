@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white_txt" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="6dp"
+        android:padding="6dp"
+        android:background="@drawable/gray_border" >
+
+        <ImageView
+            android:id="@+id/icon_img"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="6dp"
+            android:layout_marginTop="16dp"
+            android:padding="10dp"
+            android:src="@drawable/trslogo" />
+
+        <TextView
+            android:id="@+id/txt_nam"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="10dp"
+            android:layout_toRightOf="@+id/icon_img"
+            android:text="@string/str_trs_party"
+            android:textColor="@color/social_feeds_titles"
+            android:textSize="@dimen/dashboard_labels" />
+
+        <TextView
+            android:id="@+id/txt_tim"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/txt_nam"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="5dp"
+            android:text="12 hours ago"
+            android:textColor="@color/light_gray_txt"
+            android:textSize="@dimen/dashboard_labels" />
+
+        <TextView
+            android:id="@+id/txt_det"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/txt_nam"
+            android:layout_below="@+id/txt_nam"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="5dp"
+            android:ellipsize="end"
+            android:maxLines="3"
+            android:text="TextViewdsfadsfasfasfasdfafafasdfasdfasdfasfasdfafdasfddsfdfdsafasdfasdfasdfadfasdfsdafsadfdfdfsdafdafdfdfdsafdfdfdfdfdfdffff"
+            android:textColor="@color/light_gray_txt"
+            android:textSize="@dimen/dashboard_labels" />
+    </RelativeLayout>
+
+</RelativeLayout>

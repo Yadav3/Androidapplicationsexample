@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ray_header"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/white_txt" >
+
+    <LinearLayout
+        android:id="@+id/lay"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="30dp"
+        android:orientation="vertical"
+        android:visibility="visible" >
+
+        <include layout="@layout/dashboard_header" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_bottom"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@+id/lay"
+        android:layout_centerInParent="true"
+        android:layout_marginBottom="50dp"
+        android:orientation="vertical"
+        android:weightSum="3" >
+
+        <LinearLayout
+            android:id="@+id/ll_linear1"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:baselineAligned="false"
+            android:orientation="horizontal"
+            android:weightSum="1" >
+
+            <RelativeLayout
+                android:id="@+id/rrr_about"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="0.5"
+                android:background="@drawable/gray_border"
+                android:orientation="vertical"
+                >
+
+                <Button
+                    android:id="@+id/btn_about"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@null"
+                    android:layout_centerInParent="true"
+                    android:layout_gravity="center_vertical|center_horizontal|center"
+                    android:drawablePadding="5dp"
+                    android:drawableTop="@drawable/ic_launcher"
+                    android:text="@string/str_about"
+                    android:textAllCaps="false"
+                    android:padding="9dp"
+                    android:textSize="@dimen/dashboard_labels"
+                    android:textColor="@color/green_header"
+                     />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rrr_media"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_marginLeft="-6dp"
+                android:layout_weight="0.5"
+                android:background="@drawable/gray_border"
+                android:orientation="vertical"
+               >
+
+                <Button
+                    android:id="@+id/btn_media"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:drawablePadding="5dp"
+                     android:padding="9dp"
+                      android:background="@null"
+                    android:drawableTop="@drawable/ic_launcher"
+                     android:textSize="@dimen/dashboard_labels"
+                    android:text="@string/str_media"
+                    android:textAllCaps="false"
+                    android:textColor="@color/green_header"
+                     />
+            </RelativeLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_linear2"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:baselineAligned="false"
+            android:orientation="horizontal"
+            android:weightSum="1" >
+
+            <RelativeLayout
+                android:id="@+id/rrr_social_feed"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_marginTop="-6dp"
+                android:layout_weight="0.5"
+                android:background="@drawable/gray_border"
+                android:orientation="vertical"
+               >
+
+                <Button
+                    android:id="@+id/btn_social_feed"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:layout_gravity="center_vertical|center_horizontal|center"
+                    android:drawablePadding="5dp"
+                     android:padding="9dp"
+                      android:background="@null"
+                    android:drawableTop="@drawable/ic_launcher"
+                     android:textSize="@dimen/dashboard_labels"
+                    android:text="@string/str_social_feeds"
+                    android:textAllCaps="false"
+                    android:textColor="@color/green_header"
+                     />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rrr_jon"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_marginLeft="-6dp"
+                android:layout_marginTop="-6dp"
+                android:layout_weight="0.5"
+                android:background="@drawable/gray_border"
+                android:orientation="vertical"
+                >
+
+                <Button
+                    android:id="@+id/btn_jon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:drawablePadding="5dp"
+                     android:padding="9dp"
+                      android:background="@null"
+                    android:drawableTop="@drawable/ic_launcher"
+                     android:textSize="@dimen/dashboard_labels"
+                    android:text="@string/str_join"
+                    android:textAllCaps="false"
+                    android:textColor="@color/green_header"
+                     />
+            </RelativeLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_linear3"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:baselineAligned="false"
+            android:orientation="horizontal"
+            android:weightSum="1" >
+
+            <RelativeLayout
+                android:id="@+id/rrr_donate"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_marginTop="-6dp"
+                android:layout_weight="0.5"
+                android:background="@drawable/gray_border"
+                android:orientation="vertical"
+                 >
+
+                <Button
+                    android:id="@+id/btn_donate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:layout_gravity="center_vertical|center_horizontal|center"
+                    android:drawablePadding="5dp"
+                     android:padding="9dp"
+                      android:background="@null"
+                    android:drawableTop="@drawable/ic_launcher"
+                   android:textSize="@dimen/dashboard_labels"
+                    android:text="@string/str_donate"
+                    android:textAllCaps="false"
+                    android:textColor="@color/green_header"
+                     />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rrr_contact_us"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_marginLeft="-6dp"
+                android:layout_marginTop="-6dp"
+                android:layout_weight="0.5"
+                android:background="@drawable/gray_border"
+                android:orientation="vertical"
+                >
+
+                <Button
+                    android:id="@+id/btn_contact_us"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:drawablePadding="5dp"
+                     android:padding="9dp"
+                      android:background="@null"
+                    android:drawableTop="@drawable/ic_launcher"
+                     android:textSize="@dimen/dashboard_labels"
+                    android:text="@string/str_contact_us"
+                    android:textAllCaps="false"
+                    android:textColor="@color/green_header"
+                    />
+            </RelativeLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>

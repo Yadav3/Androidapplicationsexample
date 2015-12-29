@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="fill_parent"
+    android:background="#ffffff"
+    android:orientation="vertical" >
+
+    <Button
+        android:id="@+id/closeBtn"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginBottom="10dp"
+        android:background="@null"
+        android:drawablePadding="10dp"
+        android:drawableRight="@drawable/cross"
+        android:minHeight="0dip"
+        android:minWidth="0dip"
+        android:paddingLeft="15dp"
+         android:paddingBottom="15dp"
+          android:paddingTop="21dp"
+           android:paddingRight="36dp"
+        android:textAllCaps="false"
+        android:textColor="@color/light_gray_txt"
+        android:textSize="@dimen/dashboard_labels" />
+
+    <ScrollView
+        android:id="@+id/ScrollView01"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@+id/closeBtn"
+        android:visibility="visible" >
+
+        <LinearLayout
+            android:id="@+id/LinearLayout06"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_margin="21dp"
+            android:paddingBottom="15dp"
+            android:orientation="vertical" >
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" >
+
+                <ImageView
+                    android:id="@+id/icon_img"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginLeft="6dp"
+                    android:layout_marginTop="6dp"
+                    android:padding="10dp"
+                    android:src="@drawable/trslogo" />
+
+                <TextView
+                    android:id="@+id/txt_nam"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_toRightOf="@+id/icon_img"
+                    android:text="@string/str_trs_party"
+                    android:textColor="@color/social_feeds_titles"
+                    android:textSize="@dimen/dashboard_labels" />
+            </RelativeLayout>
+ <ImageView
+                android:id="@+id/i_icon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="10dp"
+                android:contentDescription="icon" />
+            <TextView
+                android:id="@+id/detail_tex"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:lineSpacingExtra="10dp"
+                android:paddingBottom="30dp"
+                android:text=""
+                android:textColor="#000000"
+                android:textSize="@dimen/dashboard_labels" >
+            </TextView>
+
+           
+
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

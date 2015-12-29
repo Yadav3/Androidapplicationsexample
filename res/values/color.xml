@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="green_header">#00A24D</color>
+    <color name="pink_header">#D40F85</color>
+    <color name="white_txt">#FFFFFF</color>
+    <color name="light_gray">#DFDFDF</color>
+    <color name="list_divider">#EDEFEF</color>
+    <color name="app_background">#e4e4e4</color>
+    <color name="light_gray_txt">#7C7C7C</color>
+    <color name="social_feeds_titles">#359ABA</color>
+    <color name="facebook_titles">#4D4D4D</color>
+    <color name="black_titles">#000000</color>
+    
+    
+</resources>

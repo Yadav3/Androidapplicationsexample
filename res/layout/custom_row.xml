@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white_txt"
+   >
+<RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="6dp"
+        android:padding="6dp"
+        android:background="@drawable/gray_border" >
+    <ImageView
+        android:id="@+id/img_user"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:padding="10dp"
+       />
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/rrr"
+        android:layout_marginTop="16dp"
+        android:layout_toRightOf="@+id/img_user"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/txt_head"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:maxLines="2"
+            android:text="heading"
+            android:padding="5dp"
+          android:textColor="@color/social_feeds_titles"
+            android:textSize="@dimen/dashboard_labels" />
+
+        <TextView
+            android:id="@+id/txt_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:layout_alignParentRight="true"
+            android:padding="5dp"
+            android:textColor="@color/light_gray_txt"
+            android:textSize="@dimen/dashboard_labels"
+            android:text="time" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/txt_desc"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:maxLines="2"
+        android:ellipsize="end"
+        android:layout_below="@+id/rrr"
+         android:layout_toRightOf="@+id/img_user"
+        android:padding="5dp"
+        android:text="description"
+          android:textColor="@color/light_gray_txt"
+            android:textSize="@dimen/dashboard_labels" />
+</RelativeLayout>
+</RelativeLayout>
